@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --background-dark-color: #000000;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.logo img {
+    width: 80px;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h3 {
+    font-size: 2.1rem;
+    color: var(--text-color);
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    padding: 2.5rem;
+}
+
+.nav-items {
+    display: flex;
+    font-size: 1.8rem;
+    width: 600px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-items li a {
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.nav-items li a:hover {
+    border-bottom: 3px solid var(--text-color);
+}
+
+.main-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/334539.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 9rem;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    width: 90%;
+    height: 78px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: all 200ms ease-in;
+    background: transparent;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.sobre-nos-container {
+    display: flex;
+    background: black;
+    color: var(--text-color);
+    justify-content: space-between;
+    height: 80vh;
+    padding: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/coffee-beans-dark-background-top-view-coffee-concept.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sobre-nos-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.info {
+    width: 600px;
+    padding-top: 3rem;
+    font-size: 1.7rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cafeteria-img {
+    padding-top: 2.9rem;
+}
+
+.cafeteria-img img {
+    width: 500px;
+    height: 350px;
+    border: 3px solid white;
+}
+
+.contato-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1.0));
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    padding: 1.5rem;
+}
+
+.contato-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.contato-info {
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+}
